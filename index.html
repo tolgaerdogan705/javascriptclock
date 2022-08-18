@@ -13,7 +13,7 @@
     />
     <title>Kodluyoruz Javascript Saat Ödevi</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-dark" onload="startTime()">
     <div class="text-center">
       <img
         src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
@@ -26,9 +26,11 @@
 
 
 
-      <div  class="clock" onload="showTime()">
-      <p id="myClock"></p>
+      <div  id="myClock" class="clock" >
+       <p class="clock" id="dd"></p>
       </div>
+
+
       <div class="text2 text-center">
         tarihinde
         <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
